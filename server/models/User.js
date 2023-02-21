@@ -1,6 +1,7 @@
-const mongoose = require('mongoose')
+import mongoose from 'mongoose'
+import bcrypt from 'bcrypt'
 const Schema = mongoose.Schema
-const bcrypt = require('bcrypt')
+
 
 const userSchema = new Schema(
     {
@@ -42,4 +43,4 @@ const userSchema = new Schema(
     }, { timestamps: true }
 )
 
-module.exports = mongoose.model('User', userSchema)
+export default mongoose.model('User', userSchema);

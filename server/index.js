@@ -9,7 +9,7 @@ import morgan from "morgan"
 import path from "path"
 import { fileURLToPath } from "url"
 import authRoutes from "./routes/auth.js"
-import { register } from "./controllers/auth.json"
+import { register } from "./controllers/auth.js"
 
 /* CONFIGURATIONS */
 const __filename = fileURLToPath(import.meta.url)
@@ -28,7 +28,7 @@ app.use("/assets", express.static(path.join(__dirname, 'public/assets')))
 
 /* FILE STORAGE */
 
-const storage = mutler.diskStorage({
+const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, "public.assets")
     },
