@@ -1,4 +1,4 @@
-import { Box, Typography, useTheme, useMediaQuery } from "@mui/system"
+import { Box, Typography, useTheme, useMediaQuery } from "@mui/material"
 import Form from "./Form";
 
 const LoginPage = () => {
@@ -7,7 +7,7 @@ const LoginPage = () => {
 
     return (
         <Box>
-            <Box width="100%" backgroundColor={theme.palette.backgroud.alt} p="1rem 6%" textAlign="center">
+            <Box width="100%" backgroundColor={theme.palette.background.alt} p="1rem 6%" textAlign="center">
                 <Typography
                     fontWeight="bold"
                     fontSize="32px"
@@ -26,6 +26,7 @@ const LoginPage = () => {
                 <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem"}}>
                     Welcome to The Social!
                 </Typography>
+                <Form />
             </Box>
         </Box>
             

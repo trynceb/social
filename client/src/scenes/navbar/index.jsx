@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, IconButton, InputBase, Typography, Select, MenuItem, FormControl, useTheme, useMediaQuery, Icon } from "@mui/material";
+import { Box, IconButton, InputBase, Typography, Select, MenuItem, FormControl, useTheme, useMediaQuery } from "@mui/material";
 import { Search, Message, DarkMode, LightMode, Notifications, Help, Menu, Close } from "@mui/icons-material"
 import { useDispatch, useSelector } from "react-redux";
 import { setMode, setLogout } from "state";
@@ -20,7 +20,7 @@ const NavBar = () => {
     const primaryLight = theme.palette.primary.light
     const alt = theme.palette.background.alt
 
-    const fullName = `${user.firstName} ${user.lastName}`
+    const fullName = user ? `${user.firstName} ${user.lastName}` : "Fix this problem"
 
     return (
         <FlexBetween padding="1rem 6%" backgroundColor={alt}>
@@ -40,7 +40,7 @@ const NavBar = () => {
                     The Social
                 </Typography>
                 {isNonMobileScreens && (
-                    <FlexBetween backgroundColor={neutralLight} borderRaduis="9px" gap="3rem" padding="0.1rem 1.5rem">
+                    <FlexBetween backgroundColor={neutralLight} borderRadius="9px" gap="3rem" padding="0.1rem 1.5rem">
                         <InputBase placeholder="Search..." /> 
                         <IconButton>
                             <Search />
