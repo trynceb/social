@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { setMode, setLogout } from "state";
 import { useNavigate } from "react-router-dom";
 import FlexBetween from "components/FlexBetween";
-import { width } from "@mui/system";
 
 const NavBar = () => {
     const [iseMobileMenuToggled, setIsMobileMenuToggled] = useState(false)
@@ -26,7 +25,7 @@ const NavBar = () => {
     return (
         <FlexBetween padding="1rem 6%" backgroundColor={alt}>
             <FlexBetween gap="1.75rem">
-                <Typography>
+                <Typography
                     fontWeight="bold"
                     fontSize="clamp(1rem, 2rem, 2.25rem)"
                     color="primary"
@@ -37,6 +36,8 @@ const NavBar = () => {
                             cursor: "pointer",
                         },
                     }}
+                >
+                    The Social
                 </Typography>
                 {isNonMobileScreens && (
                     <FlexBetween backgroundColor={neutralLight} borderRaduis="9px" gap="3rem" padding="0.1rem 1.5rem">
