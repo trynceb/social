@@ -66,7 +66,7 @@ const Form = () => {
     }
   
     const savedUserResponse = await fetch(
-      "http://127.0.0.1:3001/auth/register",
+      `${process.env.REACT_APP_API_ENDPOINT}/auth/register`,
       {
         method: "POST",
         body: formData,
@@ -82,7 +82,7 @@ const Form = () => {
   
 
   const login = async (values, onSubmitProps) => {
-    const loggedInResponse = await fetch("http://127.0.0.1:3001/auth/login", {
+    const loggedInResponse = await fetch(`${process.env.REACT_APP_API_ENDPOINT}/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),
