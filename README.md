@@ -4,11 +4,11 @@ The Social is a modern social media platform designed for sharing photos and cap
 
 ## Screenshots
 
-[![HWYhzTN.th.png](https://iili.io/HWYhzTN.th.png)](https://freeimage.host/i/HWYhzTN)
+[![HWYD01n.md.png](https://iili.io/HWYD01n.md.png)](https://freeimage.host/i/HWYD01n)
 
-[![HWYhX6u.th.png](https://iili.io/HWYhX6u.th.png)](https://freeimage.host/i/HWYhX6u)
+[![HWYDjXS.md.png](https://iili.io/HWYDjXS.md.png)](https://freeimage.host/i/HWYDjXS)
 
-[![HWYhUn1.th.png](https://iili.io/HWYhUn1.th.png)](https://freeimage.host/i/HWYhUn1)
+[![HWYDOB9.md.png](https://iili.io/HWYDOB9.md.png)](https://freeimage.host/i/HWYDOB9)
 
 ## Deployment
 
